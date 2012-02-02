@@ -1,0 +1,17 @@
+<html>
+<body>
+</body>
+<script src="stream-min.js" type="text/javascript"></script>
+<script type="text/javascript">
+function doubleNumber( x ) {  
+    return 2 * x;  
+}
+
+var s = Stream.range( 10, 20 );  
+s.print(); // prints the numbers from 10 to 20
+console.log("=================================")
+
+var doubles = s.map( doubleNumber );  
+doubles.print(); // prints 20, 22, 24, 26, 28, 30
+</script>
+</html>
